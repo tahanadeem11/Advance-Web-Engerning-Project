@@ -1,0 +1,18 @@
+﻿@model WebApplication2.Models.employe
+@{        Layout = null;    }
+<html>    <head>        
+<meta name="viewport" content="width=device-width" />        
+<title>Index</title>    </head>
+    <body>
+        <div>
+            <ul>
+                @foreach (employe employees in @Model)
+                {                    
+	<li>       @employees.Id 
+	@employees.Name 
+	@employees.Age 
+	@employees.Gender       </li>
+                }
+            </ul>
+        </div>
+    </body>	</html>
